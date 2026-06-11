@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>Cricket Scorekeeper - Live</title>
+    <link rel="stylesheet" href="live.css">
+</head>
+<body>
+    <div id="livePage" class="live-container">
+        <h1 id="matchSummary">Live Match</h1>
+        
+        <div class="match-info">
+            <div id="rrr" class="rrr"></div>
+        </div>
+        
+        <div class="batsmen-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Batter</th>
+                        <th>Runs</th>
+                        <th>Balls</th>
+                        <th>4s</th>
+                        <th>6s</th>
+                        <th>SR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="strikerRow">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="nonStrikerRow">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="bowler-info" id="bowlerInfo">
+            <h3>Current Bowler</h3>
+            <table class="bowler-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Overs</th>
+                        <th>Maidens</th>
+                        <th>Runs</th>
+                        <th>Wickets</th>
+                        <th>Economy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="bowler-name"></td>
+                        <td class="overs"></td>
+                        <td class="maidens"></td>
+                        <td class="runs"></td>
+                        <td class="wickets"></td>
+                        <td class="economy"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        
+        <div class="scoring-buttons">
+            <button id="runs0">0</button>
+            <button id="runs1">1</button>
+            <button id="runs2">2</button>
+            <button id="runs3">3</button>
+            <button id="runs4">4</button>
+            <button id="runs6">6</button>
+            <button id="wicket">Wicket</button>
+        </div>
+        
+        <div class="navigation">
+            <button id="goToScorecard">Scorecard</button>
+        </div>
+    </div>
+    <script src="score.js"></script>
+</body>
+</html>
